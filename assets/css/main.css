@@ -293,23 +293,19 @@ a:after {
 
 #headerwrap h1 {
 	color:#ffffff;
-	margin-top: 90px;
-	padding-bottom: 30px;
 	letter-spacing: 8px;
-	font-size: 100px;
-	font-weight: bold;
-	text-shadow: 2px 2px 2px #000;
+	font-size: 50px;
+    margin-bottom: 0;
 }
 
 #headerwrap p {
 	color:#ffffff;
-	font-size: 40px;
+	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
 	line-height: 40px;
 	letter-spacing: 3px;
 	margin-left: 15px;
-	text-shadow: 1px 1px 1px #000;
 }
 
 #greywrap {
@@ -330,6 +326,7 @@ a:after {
 	letter-spacing: 1px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+    text-align: justify;
 }
 
 #greywrap .icon {
@@ -630,15 +627,14 @@ a:after {
 }
 
 @media screen and (max-width:769px) {
-	#headerwrap h1 {
-		font-size: 80px;
-	}
-
-	#headerwrap p {
-		font-size: 30px;
-		line-height: 38px;
-	}
-
+    .profileinfo {
+        display: none;
+    }
+    
+    #headerwrap {
+        min-height: 450px;
+    }
+    
     .largeDisplayImage {
         display: none;
     }
@@ -648,3 +644,44 @@ a:after {
     }
 }
 
+.whatinfo {
+    text-align: justify;
+    margin-bottom: 0;
+    border: none;
+}
+
+.whatinfoextra {
+    margin: auto;
+}
+
+#profilepic {
+    height: 180px;
+    border-radius: 25px;
+}
+
+.social li {
+	display: inline;
+	list-style: none;
+	margin-right: 10px;
+}
+
+.social li:hover, .social p:hover {
+	opacity: .4;
+}
+
+.social {
+	list-style: none;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	font-weight: 800;
+}
+
+#pronunciation {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#pronunciation i {
+    font-size: 10px;
+}

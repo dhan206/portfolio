@@ -42,18 +42,15 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+            <span class="icon icon-menu" style="font-size:30px; color:#FFFFFF;"></span>
           </button>
-          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-menu" style="font-size:21px; color:#FFFFFF;"></span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#home" class="smoothScroll">Home</a></li>
-			<li> <a href="#about" class="smoothScroll"> About</a></li>
-			<!--<li> <a href="#services" class="smoothScroll"> Services</a></li>-->
-			<!--<li> <a href="#team" class="smoothScroll"> Team</a></li>-->
+			<li> <a href="#greywrap" class="smoothScroll"> About</a></li>
 			<li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
-			<!--<li> <a href="#blog" class="smoothScroll"> Blog</a></li>-->
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </div><!--/.nav-collapse -->
       </div>
@@ -65,57 +62,73 @@
 		<!-- ==== HEADERWRAP ==== -->
 	    <div id="headerwrap" id="home" name="home">
 			<header class="clearfix">
-	  		 		<h1><span class="icon icon-shield"></span></h1>
-	  		 		<p>Welcome,</p>
-	  		 		<p>My name is Derek Han</p>
+                    <br>
+                    <br>
+	  		 		<img id="profilepic" src="./assets/img/profilepic.jpg" alt="profile pic">
+	  		 		<h1>Derek Han</h1>
+					<p id="pronunciation" class="profileinfo">
+						/der&#x2032;-ik/ /h&#xe4;n/<i>noun</i>
+					</p>
+					<p class="profileinfo">
+						an effective communicator, hardworking programmer,<br>
+                        and innovative thinker striving for excellence
+					</p>
 	  		</header>	    
 	    </div>
 
 		<!-- ==== GREYWRAP ==== -->
 		<div id="greywrap">
+            <h1 class="centered">ABOUT</h1>
+            <hr>
+            <br>
 			<div class="row">
 				<div class="col-lg-4 callout">
-
-					<h2>Bootstrap 3</h2>
-					<p>Shield Theme is powered by Bootstrap 3. The incredible Mobile First Framework is the best option to run your website. </p>
+					<h2></h2>
+					<p>
+                        I was born and raised in Seattle, WA.<br>
+                        I have a passion for coding and development.<br>
+                        I have experience with web developement, object-oriented programming, database implementation and management, and user research.
+                    </p>
 				</div><!-- col-lg-4 -->
 					
 				<div class="col-lg-4 callout">
 					<img class="largeDisplayImage" src="./assets/img/logo/ischool-primary-web.png" alt="Information School Logo"/>
 					<div class="smallDisplayImage"><img src="./assets/img/logo/uwlogo.png" alt="University of Washington Logo"/></div>
-					<p>I am a Junior at the University of Washington majoring in Informatics at the Information School. Want to learn more about Informatics?
-						<a href="https://ischool.uw.edu/academics/informatics" target="_blank">click here</a></p>
+					<p>I am a Junior at the University of Washington majoring in Informatics at the Information School. I plan on taking a custom track towards a degree option focused on software development.
+                    </p>
 				</div><!-- col-lg-4 -->	
 				
 				<div class="col-lg-4 callout">
-					<span class="icon icon-heart"></span>
-					<h2>Crafted with Love</h2>
-					<p>We don't make sites, we craft themes with love & passion. That is our most valued secret. We only do thing that we love.   </p>
+                    <h2>What is Informatics?</h2>
+                    <br>
+                    <a data-toggle="modal" href="#whatInfoModal" class="btn btn-primary btn-lg">Informatics is</a>
+                    <div class="modal fade" id="whatInfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Informatics is</h4>
+							</div>
+							<div class="modal-body">
+                                <img class="img-responsive whatinfoextra" src="assets/img/whatinfo.png" alt="what is informatics">
+								<p class="whatinfo">A program that focuses on computer systems from a user-centered perspective and studies the structure, behavior and interactions of natural and artificial systems that store, process and communicate information. Includes instruction in information sciences, human computer interaction, information system analysis and design, telecommunications structure and information architecture and management.
+                                <br><a href="https://ischool.uw.edu/academics/informatics" target="_blank">Learn More</a></b>
+                                </p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 				</div><!-- col-lg-4 -->	
 			</div><!-- row -->
 		</div><!-- greywrap -->
 		
-		<!-- ==== ABOUT ==== -->
-		<div class="container" id="about" name="about">
-			<div class="row white">
-			<br>
-				<h1 class="centered">A LITTLE ABOUT OUR AGENCY</h1>
-				<hr>
-				
-				<div class="col-lg-6">
-					<p>We believe ideas come from everyone, everywhere. In fact, at BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin Cities and we believe this place has much to offer. So we do what we can to support the community we love.</p>
-				</div><!-- col-lg-6 -->
-				
-				<div class="col-lg-6">
-					<p>Over the past four years, we’ve provided more than $1 million in combined cash and pro bono support to Way to Grow, an early childhood education and nonprofit organization. Other community giving involvement throughout our agency history includes pro bono work for more than 13 organizations, direct giving, a scholarship program through the Minneapolis College of Art & Design, board memberships, and ongoing participation in the Keystone Club, which gives five percent of our company’s earnings back to the community each year.</p>
-				</div><!-- col-lg-6 -->
-			</div><!-- row -->
-		</div><!-- container -->
-		
 		<!-- ==== SECTION DIVIDER3 -->
 		<section class="section-divider textdivider divider3">
 			<div class="container">
-				<h1>DESIGN SOLVE PROBLEMS</h1>
+				<h1>DESIGN SOLVES PROBLEMS</h1>
 				<hr>
 				<p>From the purely practical to the richly philosophical, design is the solution to a host of challenges.</p>
 			</div><!-- container -->
@@ -138,16 +151,16 @@
 				<div class="col-md-4 ">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/dawgCoffee.png" alt="dawg coffee">
+							<img class="img-responsive" src="assets/img/portfolio/dawgCoffeeSmall.png" alt="dawg coffee">
 							<figcaption>
 								<h5>Dawg Coffee</h5>
-								<a data-toggle="modal" href="#dawgCoffee" class="btn btn-primary btn-lg">Take a Look</a>
+								<a data-toggle="modal" href="#dawgCoffeeModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 
-				<div class="modal fade" id="dawgCoffee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="dawgCoffeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 					  <div class="modal-content">
 						<div class="modal-header">
@@ -155,8 +168,8 @@
 						  <h4 class="modal-title">Dawg Coffee</h4>
 						</div>
 						<div class="modal-body">
-						  <p><img class="img-responsive" src="assets/img/portfolio/dawgCoffee.png" alt="dawg coffee"></p>
-						  <p>This project was crafted for a fictitious coffee shop named Dawg Coffee. This site will respond to the size of the screen it is rendered on, and adjust its layout and styling accordingly. It is also utilizing AngularJS to create a single-page application, display data-driven views, and format, order and filter data.</p>
+						  <p><img class="img-responsive" src="assets/img/portfolio/dawgCoffeeLarge.png" alt="dawg coffee"></p>
+						  <p>This project was crafted for a fictitious coffee shop named Dawg Coffee. This site will respond to the size of the screen it is rendered on, and adjust its layout and styling accordingly. It is also utilizing <strong>AngularJS</strong> to create a single-page application, display data-driven views, and format, order and filter data.</p>
 						  <p><b><a href="../INFO343/challenges/dawg-coffee" target="_blank">Visit Dawg Coffee</a></b></p>
 						</div>
 						<div class="modal-footer">
@@ -171,16 +184,16 @@
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/concertFindr.png" alt="concert finder">
+							<img class="img-responsive" src="assets/img/portfolio/concertFindrSmall.png" alt="concert finder">
 							<figcaption>
 								<h5>ConcertFindr</h5>
-								<a data-toggle="modal" href="#concertFindr" class="btn btn-primary btn-lg">Take a Look</a>
+								<a data-toggle="modal" href="#concertFindrModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 
-				<div class="modal fade" id="concertFindr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="concertFindrModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -188,7 +201,7 @@
 								<h4 class="modal-title">ConcertFindr</h4>
 							</div>
 							<div class="modal-body">
-								<p><img class="img-responsive" src="assets/img/portfolio/concertFindr.png" alt="concert finder"></p>
+								<p><img class="img-responsive" src="assets/img/portfolio/concertFindrLarge.png" alt="concert finder"></p>
 								<p>This project was a final group project for a web development class. It required team coding through
 									<a href="https://github.com/dhan206/Group_Project" target="_blank" title="check out the source code">GitHub</a> and demonstrates group collaboration. ConcertFindr utilizes concert data from Songkick's API and sample music streaming from Spotify. The purpose of this website is to provide the user with a taste of the music that will be playing at concert events around the city.</p>
 								<p><b><a href="../INFO343/Group_Project" target="_blank">Visit ConcertFindr</a></b></p>
@@ -199,31 +212,31 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->
-				
+                
 				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
+				<div class="col-md-4 ">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
+							<img class="img-responsive" src="assets/img/portfolio/reviewsSmall.png" alt="reviews">
 							<figcaption>
-								<h5>ANDROID PAGE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<h5>Reviews</h5>
+								<a data-toggle="modal" href="#reviewsModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="reviewsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">Project Title</h4>
+								<h4 class="modal-title">Reviews</h4>
 							</div>
 							<div class="modal-body">
-								<p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
-								<p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-								<p><b><a href="#">Visit Site</a></b></p>
+								<p><img class="img-responsive" src="assets/img/portfolio/reviewsLarge.png" alt=""></p>
+								<p>This project is an interactive system that allows users to write and share reviews, similar to Yelp or Amazon's product reviews. It uses Parse as its cloud-based data storage web service to create, read, update and delete data. It also uses jQuery to dyanmically alter the content of the page and respond to user interactions. The web page provides users with visual feedback while maing asynchronous requests to the server (i.e., loading wheels).</p>
+								<p><b><a href="../INFO343/challenges/reviewer">Visit Reviews</a></b></p>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -233,31 +246,32 @@
 				</div><!-- /.modal -->
 			</div><!-- /row -->
 
-				<!-- PORTFOLIO IMAGE 4 -->
+			
 			<div class="row">	
-				<div class="col-md-4 ">
+                <!-- PORTFOLIO IMAGE 4 -->
+				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
+							<img class="img-responsive" src="assets/img/portfolio/react-tac-toe.png" alt="React tac toe">
 							<figcaption>
-								<h5>PROFILE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<h5>React Tac Toe</h5>
+								<a data-toggle="modal" href="#react-tac-toeModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="react-tac-toeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">Project Title</h4>
+								<h4 class="modal-title">React-Tac-Toe</h4>
 							</div>
 							<div class="modal-body">
-								<p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
-								<p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-								<p><b><a href="#">Visit Site</a></b></p>
+								<p><img class="img-responsive" src="assets/img/portfolio/react-tac-toe.png" alt="React tac toe"></p>
+								<p>In this project I use <strong>ReactJS</strong> and <strong>Node.js</strong> to create a game of tic-tac-toe. I use the MVC pattern to seperate the game into three different components. The Model keeps track of the game state and stores the data in an object instantiated from the TicTacToeGame class. The View displays the game to the user and is implemented with React. Finally, the controller acts an an intermediarty between the model object and React view components. It takes user input from the view, calls methods on the model to modify it, and then re-renders the view with the changes.</p>
+								<!--<p><b><a href="#">Visit Site</a></b></p>-->
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -270,26 +284,26 @@
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
+							<img class="img-responsive" src="assets/img/portfolio/soundCloudSmall.png" alt="">
 							<figcaption>
-								<h5>TWITTER STATUS</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<h5>SoundCloud Player</h5>
+								<a data-toggle="modal" href="#soundCloudModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="soundCloudModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">Project Title</h4>
+								<h4 class="modal-title">SoundCloud Web Application</h4>
 							</div>
 							<div class="modal-body">
-								<p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
-								<p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-								<p><b><a href="#">Visit Site</a></b></p>
+								<p><img class="img-responsive" src="assets/img/portfolio/soundCloudLarge.png" alt=""></p>
+								<p>This project pulls data from SoundCloud's RESTFUL API and allows users to listen to tracks. It uses AngularJS to separate the web application's responsibilities into models, views, and controllers. It also utilizes AngularJS to create a dynamic data-drive user interface and validate HTML forms and user-entered data.</p>
+								<p><b><a href="../INFO343/challenges/soundcloud">Visit SoundCloud Player</a></b></p>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -297,31 +311,31 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 6 -->
+            
+                <!-- PORTFOLIO IMAGE 6 -->
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
+							<img class="img-responsive" src="assets/img/portfolio/recoverEaseSmall.png" alt="">
 							<figcaption>
-								<h5>PHONE MOCKUP</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+								<h5>Design Specification</h5>
+								<a data-toggle="modal" href="#recoverEaseModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="recoverEaseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">Project Title</h4>
+								<h4 class="modal-title">RecoverEase Design Specification</h4>
 							</div>
 							<div class="modal-body">
-								<p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
-								<p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-								<p><b><a href="#">Visit Site</a></b></p>
+								<p><img class="img-responsive" src="assets/img/portfolio/recoverEaseLarge.png" alt=""></p>
+								<p>This project was a group collaboration to create a design specification for RecoverEase, a Google Chrome Extension that flags sports recovery myths found on the Internet. It honed my skills in usability testing, scoping, prototyping, wireframing, user-flow diagram making, and, ultimately, design thinking.</p>
+								<p><b><a href="./assets/documents/DesignSpec.docx">View The Document</a><br><a href="./assets/documents/RecoverEaseProcessBook.pdf">View The Process Book</a></b></p>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -329,7 +343,7 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->
-			</div><!-- /row -->
+            </div><!-- /row -->
 			<br>
 			<br>
 		</div><!-- /row -->
@@ -338,11 +352,8 @@
 		<!-- ==== SECTION DIVIDER6 ==== -->
 		<section class="section-divider textdivider divider6">
 			<div class="container">
-				<h1>CRAFTED IN NEW YORK, USA.</h1>
+				<h1>CRAFTED IN Seattle, Washington.</h1>
 				<hr>
-				<p>Some Address 987,</p>
-				<p>+34 9884 4893</p>
-				<p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
 			</div><!-- container -->
 		</section><!-- section -->
 		
@@ -353,55 +364,34 @@
 				<hr>
 				<br>
 				<br>
-				<div class="col-lg-4">
-					<h3>Contact Information</h3>
-					<p><span class="icon icon-home"></span> Some Address 987, NY<br/>
-						<span class="icon icon-phone"></span> +34 9884 4893 <br/>
-						<span class="icon icon-mobile"></span> +34 59855 9853 <br/>
-						<span class="icon icon-envelop"></span> <a href="#"> agency@blacktie.co</a> <br/>
-						<span class="icon icon-twitter"></span> <a href="#"> @blacktie_co </a> <br/>
-						<span class="icon icon-facebook"></span> <a href="#"> BlackTie Agency </a> <br/>
-					</p>
+				<div class="col-lg-4" class="centered">
+					<h3 class="centered">SOCIAL</h3>
+                    <br>
+					<ul class="social">
+                        <li><a href="mailto:dhan206@uw.edu"><img src="./assets/img/social/maillogo.jpg" alt="mail" height="50" width="50" /></a></li>
+                        <li><a href="https://www.linkedin.com/pub/derek-han/b2/baa/b26"><img src="./assets/img/social/linkedinlogo.jpg" alt="LinkedIn" height="50" width="50" /></a></li>
+                        <li><a href="https://www.facebook.com/DeReeCahn"><img src="./assets/img/social/facebooklogo.jpg" alt="Facebook" height="50" width="50" /></a></li>
+                        <li><a href="https://github.com/dhan206"><img src="./assets/img/social/githublogo.jpg" alt="GitHub" height="50" width="50" /></a></li>
+                        <li><a href="tel:+12069152928"><img src="./assets/img/social/phonelogo.jpg" alt="Phone" height="50" width="50" /></a></li>
+				    </ul>
 				</div><!-- col -->
 				
 				<div class="col-lg-4">
-					<h3>Newsletter</h3>
-					<p>Register to our newsletter and be updated with the latests information regarding our services, offers and much more.</p>
-					<p>
-						<form class="form-horizontal" role="form">
-						  <div class="form-group">
-						    <label for="inputEmail1" class="col-lg-4 control-label"></label>
-						    <div class="col-lg-10">
-						      <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-						    </div>
-						  </div>
-						  <div class="form-group">
-						    <label for="text1" class="col-lg-4 control-label"></label>
-						    <div class="col-lg-10">
-						      <input type="text" class="form-control" id="text1" placeholder="Your Name">
-						    </div>
-						  </div>
-						  <div class="form-group">
-						    <div class="col-lg-10">
-						      <button type="submit" class="btn btn-success">Sign in</button>
-						    </div>
-						  </div>
-					   </form><!-- form -->
-					</p>
+					<h3 class="centered">RESUME</h3>
+                    <p class="social"><a href="./assets/documents/DerekHanResume.pdf" target="_blank"><img src="./assets/img/social/resumelogo.jpg" alt="resume" height="150" width="150"></a></p>
 				</div><!-- col -->
 				
 				<div class="col-lg-4">
-					<h3>Support Us</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<h3 class="centered">issues with my site?</h3>
+                    <br>
+					<p>I apprepciate any feedback. If there are any issues, please feel free to contact me.</p>
 				</div><!-- col -->
-
 			</div><!-- row -->
-		
 		</div><!-- container -->
 
 		<!--<div id="footerwrap">-->
 			<!--<div class="container">-->
-				<!--<h4>Created by <a href="http://blacktie.co">BlackTie.co</a> - Copyright 2014</h4>-->
+				<!--<h4>Template by <a href="http://blacktie.co">BlackTie.co</a> - Copyright 2014</h4>-->
 			<!--</div>-->
 		<!--</div>-->
 
